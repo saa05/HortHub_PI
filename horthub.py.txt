@@ -1,0 +1,61 @@
+]class Individuo: 
+    def __init__(self, nome, cpf, telefone, email, endereco):
+        self.nome = nome
+        self.cpf = cpf
+        self.telefone = telefone
+        self.email = email
+        self.endereco = endereco
+    
+    def __str__(self):
+        return f"Nome: {self.nome}\nCPF: {self.cpf}\nTelefone: {self.telefone}\nE-mail: {self.email}\nEndereço: {self.endereco}"
+        
+endereco = "Rua Nova York, 123 - Brooklin - São Paulo - SP"
+individuo1 = Individuo("João da Silva", "123.456.789-10", "(11) 98964-8752", "joao.silva@gamil.com", endereco)
+
+print(individuo1)
+
+
+
+
+class Produto: 
+    def __init__(self, nome, cor, peso, preco, quantidade, tipo):
+        self.nome = nome
+        self.cor = cor
+        self.peso = peso
+        self.preco = preco
+        self.quantidade = quantidade
+        self.tipo = tipo
+
+    def __str__(self):
+        return f"{self.nome} ({self.tipo}), cor {self.cor}, {self.peso} kg, R${self.preco:.2f}, {self.quantidade} unidades"
+
+produto1 = Produto("Maçã", "vermelha", 0.5, 2.50, 10, "fruta")
+produto2 = Produto("Tomate", "vermelho", 1.0, 4.00, 5, "legume")
+produto3 = Produto("Alface", "verde", 0.2, 2.00, 20, "verdura")
+produto4 = Produto("Mel", "dourado", 0.3, 20.00, 2, "produto apícola")
+
+print(produto1)
+print(produto2)
+print(produto3)
+print(produto4)
+
+
+
+
+
+class Fornecedor: 
+    def __init__ (self, nome, cnpj, telefone, email, endereco, certificacaoSAT):
+        self.nome = nome
+        self.cnpj = cnpj
+        self.telefone = telefone
+        self.email = email
+        self.endereco = endereco
+        self.certificacaoSAT = certificacaoSAT
+    
+    def __str__(self):
+        return f"Nome: {self.nome}\nCnpj: {self.cnpj}\nTelefone: {self.telefone}\nE-mail: {self.email}\nEndereço: {self.endereco}\nCertificacaoSAT: {self.certificacaoSAT}"
+        
+endereco = "Rua Nova York, 123 - Brooklin - São Paulo - SP"
+fornecedor1 = Fornecedor("João da Silva", "89.283.285/0001-20", "(11) 98964-8752", "joao.silva@gamil.com", endereco, "555.283.034")
+
+print(fornecedor1)
